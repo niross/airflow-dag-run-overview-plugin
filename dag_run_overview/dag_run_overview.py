@@ -1,9 +1,7 @@
 from airflow.plugins_manager import AirflowPlugin
 
-from .plugin import (
-    dro_blueprint,
-    dro_view,
-)
+from .blueprints import dro_blueprint
+from .views import dro_view
 
 
 class DagRunOverviewPlugin(AirflowPlugin):
